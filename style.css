@@ -32,6 +32,28 @@ body {
 
 }
 
+/* Toogle menu */
+.toggle-menu {
+    width: 40px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    filter: invert(1);
+    display: none;
+    z-index: 1;
+}
+
+.toggle-menu img {
+    max-width: 100%;
+}
+
+.menu-input-checkbox {
+    display: none;
+}
+
+/* fin Toogle menu */
+
 /* cabezera de pagina */
 #logo {
     width: 45px;
@@ -67,6 +89,7 @@ body {
 #header ul li a {
     text-decoration: none;
     color: #fff;
+    font-size: 1.5rem;
 }
 
 #header ul li a:hover {
@@ -101,17 +124,19 @@ titulo articulo y formulario contacto*/
     display: flex;
     justify-content: center;
 
+
 }
 
 .title_sesion {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #0e293c;
-    width: 200px;
+    width: 400px;
     margin-top: 10px;
     border-radius: 5px;
     color: #fff;
-    font-size: 30px;
+    font-size: 3rem;
+    box-shadow: 3.9px 7.8px 7.8px hsl(0deg 0% 0% / 0.38);
 }
 
 /* fin section de articulos Title  
@@ -271,15 +296,15 @@ titulo articulo y formulario contacto*/
         margin: 20px;
     }
 
-    #header ul li a {
-        font-size: 13px;
-    }
+    /* #header ul li a {
+        font-size: 1em;
+    } */
 
     /* fin cabezera de pagina */
 
     /* Section carrusel */
     .carrusel {
-        height:auto;
+        height: auto;
         object-fit: cover;
     }
 
@@ -331,6 +356,53 @@ titulo articulo y formulario contacto*/
         background-color: red;
     } */
 
+    /* Toogle menu */
+    #main-nav {
+        flex-direction: column;
+        transition: transform 0.3s;
+        transform: translateY(-100%);
+        background-color: #0e293c;
+
+    }
+
+    .main-menu--show {
+        transform: translateY(0);
+        /* height: auto;
+        padding: 0px; */
+
+    }
+
+    /* menu oculto co checbok */
+    .menu-input-checkbox:checked+#main-nav {
+        transform: translateY(0);
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    /* fin menu oculto co checbok */
+    /* #main-nav {
+        background-color: #0e293c;
+        height: 150px;
+        z-index: 1;
+
+    } */
+
+    /* .toggle-menu {
+       margin-bottom: -30px;
+    } */
+   
+    #header ul li a {
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+    /* finToogle menu */
+
+
     /* section formulario contacto */
     #card_container {
         display: grid;
@@ -348,15 +420,13 @@ titulo articulo y formulario contacto*/
     /* body {
         background-color: green;
     } */
-    
+
     /* cabezera de pagina */
     #header ul li {
         margin: 15px;
     }
 
-    #header ul li a {
-        font-size: 15px;
-    }
+
 
     /* fin cabezera de pagina */
 
