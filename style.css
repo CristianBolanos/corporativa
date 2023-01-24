@@ -5,14 +5,14 @@
 }
 
 /* Scroll mas suabisado */
- html {
+html {
     scroll-behavior: smooth;
-} 
+}
 
 /* FIN Scroll mas suabisado */
 section[id] {
     scroll-padding-top: 60px;
-} 
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -41,9 +41,7 @@ body {
     margin-left: 30px;
 }
 
-#menu {
-    display: none;
-}
+
 
 #header {
     background-color: #0e293c;
@@ -82,7 +80,7 @@ body {
 /* Section carrusel */
 .carrusel {
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin-top: 60px;
     object-fit: cover;
 
@@ -96,16 +94,16 @@ body {
 /* FIN Section carrusel */
 
 
-/* section de articulos Title  */
-.title-container{
+/* section de articulos Title  
+titulo articulo y formulario contacto*/
+
+.title-container {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .title_sesion {
-    
-    /* titulo articulo y formulario contacto */
     text-align: center;
     padding: 10px;
     background-color: #0e293c;
@@ -114,18 +112,15 @@ body {
     border-radius: 5px;
     color: #fff;
     font-size: 30px;
-
-    
 }
 
-/* FINsection de articulos Title  */
+/* fin section de articulos Title  
+titulo articulo y formulario contacto*/
 
 /*  section de articulos  */
 #card_container {
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
-   
 
 }
 
@@ -186,18 +181,13 @@ body {
 /* section formulario contacto */
 #Container_formulario {
     max-width: 100%;
-    /* height: 500px; */
     background-image: url(./assets/img/bannercorreo.jpg);
     background-size: cover;
-    /* padding: 20px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-
-    
 }
-
 
 .artitle-correo {
     background-color: #0e293cde;
@@ -206,12 +196,9 @@ body {
     padding: 20px;
     font-style: italic;
     color: #fff;
-
 }
 
-
 #container_inputs {
-    /* background-color: #0e293cde; */
     color: #fff;
     font-weight: bold;
     font-size: 15px;
@@ -223,11 +210,9 @@ body {
     margin-top: 10px;
 }
 
-
 .label {
     margin-top: 20px;
     display: flex;
-
 }
 
 .input {
@@ -250,8 +235,6 @@ body {
     margin-top: 20px;
 }
 
-
-
 /* FIN section formulario contacto */
 
 /* footer */
@@ -271,16 +254,19 @@ body {
 
 #footer p {
     margin: 10px;
-} 
+}
 
 /*FIN footer */
 
 
 /* Medidas Web Responsive Design */
 @media only screen and (max-width: 1024px) {
-    /*  body {
+
+    /* body {
         background-color: yellow;
-    }*/
+    } */
+
+    /* cabezera de pagina */
     #header ul li {
         margin: 20px;
     }
@@ -289,31 +275,37 @@ body {
         font-size: 13px;
     }
 
+    /* fin cabezera de pagina */
+
+    /* Section carrusel */
     .carrusel {
-        height: auto;
+        height:auto;
         object-fit: cover;
     }
 
+    /* fin Section carrusel */
+
+    /* section de articulos Title titulo articulo y formulario contacto*/
     .title_sesion {
         max-width: 130px;
         font-size: 20px;
-        /* margin: auto; */
         justify-content: center;
-
     }
 
+
+    /* section de articulos Title titulo articulo y formulario contacto*/
+
+    /*  section de articulos  */
     #card_container {
         display: grid;
-        grid-template-columns: 1fr 1fr ; 
+        grid-template-columns: 1fr 1fr;
         justify-content: space-around;
         gap: 10px;
-        /* margin:20px ; */
     }
 
-    /* .cards {
-        margin: 10px auto;
+    /*  FIN section de articulos  */
 
-    } */
+    /* section formulario contacto */
 
     #Container_formulario {
         display: flex;
@@ -322,7 +314,7 @@ body {
     }
 
     #container_inputs {
-        margin-top: 20px;
+        margin: 20px;
         background-color: #0e293cde;
     }
 
@@ -331,63 +323,33 @@ body {
 
     }
 
-
+    /* fin section formulario contacto */
 }
 
 @media only screen and (max-width: 768px) {
     /* body {
         background-color: red;
-    } 
+    } */
 
-    #header ul li {
-        margin: 20px;
-    }
-
-    #header ul li a {
-        font-size: 13px;
-    }
-
-    .carrusel {
-        height: auto;
-        object-fit: cover;
-    }
-
-    .title_sesion {
-        max-width: 130px;
-        font-size: 20px;
-    }
-
+    /* section formulario contacto */
     #card_container {
         display: grid;
-        grid-template-columns: 1fr 1fr ; 
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 10px;
     }
 
-    .cards {
-        margin: 10px auto;
+    /* fin section formulario contacto */
 
-    }
-
-    #Container_formulario {
-        display: flex;
-        flex-direction: column;
-        background-size: inherit;
-    }
-
-    #container_inputs {
-        margin-top: 20px;
-    }
-
-    #container_inputs {
-        width: auto;
-
-    }*/
 }
 
 @media only screen and (max-width: 320px) {
+
     /* body {
         background-color: green;
     } */
-
+    
+    /* cabezera de pagina */
     #header ul li {
         margin: 15px;
     }
@@ -396,10 +358,14 @@ body {
         font-size: 15px;
     }
 
+    /* fin cabezera de pagina */
+
+    /* section formulario contacto */
     #card_container {
         display: flex;
         flex-direction: column;
         margin: 5px;
-
     }
+
+    /* fin section formulario contacto */
 }
