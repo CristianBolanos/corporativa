@@ -97,11 +97,16 @@ body {
 
 
 /* section de articulos Title  */
+.title-container{
+    display: flex;
+    justify-content: center;
+    
+}
 
 .title_sesion {
-    text-align: center;
-    margin: auto;
+    
     /* titulo articulo y formulario contacto */
+    text-align: center;
     padding: 10px;
     background-color: #0e293c;
     width: 200px;
@@ -109,6 +114,8 @@ body {
     border-radius: 5px;
     color: #fff;
     font-size: 30px;
+
+    
 }
 
 /* FINsection de articulos Title  */
@@ -182,11 +189,13 @@ body {
     /* height: 500px; */
     background-image: url(./assets/img/bannercorreo.jpg);
     background-size: cover;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+
+    
 }
 
 
@@ -288,6 +297,9 @@ body {
     .title_sesion {
         max-width: 130px;
         font-size: 20px;
+        /* margin: auto; */
+        justify-content: center;
+
     }
 
     #card_container {
