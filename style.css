@@ -62,7 +62,7 @@ body {
     height: 45px;
     position: absolute;
     top: 0.5rem;
-    left: 1rem;  
+    left: 1rem;
 }
 
 
@@ -208,7 +208,7 @@ titulo articulo y formulario contacto*/
 /* section formulario contacto */
 #Container_formulario {
     max-width: 100%;
-    background-image: url(./assets/img/bannercorreo.jpg);
+    background-image: url("./assets/img/banner.jpg");
     background-size: cover;
     display: flex;
     justify-content: space-around;
@@ -337,12 +337,14 @@ titulo articulo y formulario contacto*/
     #Container_formulario {
         display: flex;
         flex-direction: column;
-        background-size: inherit;
+        /* background-size: inherit; */
+        object-fit: cover
     }
 
     #container_inputs {
         margin: 20px;
         background-color: #0e293cde;
+        
     }
 
     #container_inputs {
@@ -359,7 +361,7 @@ titulo articulo y formulario contacto*/
     } */
 
     /* Toogle menu */
-    #main-nav {
+    .main-menu {
         flex-direction: column;
         transition: transform 0.3s;
         transform: translateY(-100%);
@@ -367,23 +369,42 @@ titulo articulo y formulario contacto*/
 
     }
 
-    .main-menu--show {
+    .main-nav--show {
         transform: translateY(0);
         /* height: auto;
         padding: 0px; */
 
     }
 
-    /* menu oculto co checbok */
-    .menu-input-checkbox:checked+#main-nav {
+    /* menu oculto co checkbok */
+    /* .menu-input-checkbox:checked+#main-nav {
         transform: translateY(0);
-    }
+    } */
 
     .toggle-menu {
         display: block;
     }
+ /* fin menu oculto co checkbok */
 
-    /* fin menu oculto co checbok */
+    /* Toggle menu x */
+    #toggle-menu .hamburger-icon {
+        width: 40px;
+        height: 40px;
+        background: url('./assets/img/bars-solid.svg') no-repeat;
+        background-size: contain;
+        /* background-position: center; */
+        filter: drop-shadow(1px 2px 1px (0, 0, 0, .1));
+    }
+
+    #toggle-menu.active .hamburger-icon {
+        background: url('./assets/img/xmark-solid.svg') no-repeat;
+        background-size: contain;
+        /* background-position: center; */
+    }
+
+    /* fin  Toggle menu x */
+
+
     /* #main-nav {
         background-color: #0e293c;
         height: 150px;
@@ -394,11 +415,11 @@ titulo articulo y formulario contacto*/
     /* .toggle-menu {
        margin-bottom: -30px;
     } */
-   
+
     #header ul li a {
         display: flex;
         justify-content: center;
-        
+
 
     }
 
