@@ -209,7 +209,7 @@ titulo articulo y formulario contacto*/
 /* section formulario contacto */
 #Container_formulario {
     max-width: 100%;
-    background-image: url("./assets/img/banner.jpg");
+    background-image: url("./assets/img/imagen-correo.webp");
     background-size: cover;
     display: flex;
     justify-content: space-around;
