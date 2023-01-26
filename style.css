@@ -36,7 +36,7 @@ body {
 .toggle-menu {
     width: 40px;
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
     cursor: pointer;
     filter: invert(1);
@@ -52,6 +52,8 @@ body {
     display: none;
 }
 
+
+
 /* fin Toogle menu */
 
 /* cabezera de pagina */
@@ -59,8 +61,8 @@ body {
     width: 45px;
     height: 45px;
     position: absolute;
-    margin: 10px;
-    margin-left: 30px;
+    top: 0.5rem;
+    left: 1rem;  
 }
 
 
