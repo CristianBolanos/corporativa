@@ -401,6 +401,7 @@ titulo articulo y formulario contacto*/
         height: 40px;
         background: url('./assets/img/bars-solid.svg') no-repeat;
         background-size:cover;
+        background-position: center;
         /* filter: drop-shadow(1px 2px 1px (0, 0, 0, .1)); */
     }
   
