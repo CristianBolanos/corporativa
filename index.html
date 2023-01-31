@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- <html lang="es"> -->
+<html lang="zxx">
+
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no ">
 
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <!-- <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> -->
     <meta name="description" content="Landing Pages corporativa">
     <meta name="author" content=" Crsitian Bolaños">
 
@@ -19,10 +21,8 @@
     <!-- cabecera -->
     <header>
         <nav id="header">
-            <picture>
-                <a href="index.html"><img src="assets/img/logo.png" alt="logo" id="logo"></a>
-                <!-- <img src="./assets/img/menu.png" alt="menu" id="menu"> -->
-            </picture>
+            <a href="index.html"><img src="assets/img/logo.png" alt="logo" id="logo"></a>
+            <!-- <img src="./assets/img/menu.png" alt="menu" id="menu"> -->
             <div id="toggle-menu" class="toggle-menu">
                 <!-- <label for="menu-check" >
                     <img src="./assets/img/bars-solid.svg" alt="menu" >
@@ -30,7 +30,7 @@
                 <div class="hamburger-icon"></div>
             </div>
 
-            <input type="checkbox" name="" id="menu-check" class="menu-input-checkbox">
+            <input type="checkbox" id="menu-check" class="menu-input-checkbox">
             <ul id="main-nav" class="main-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#articles">Articles</a></li>
@@ -43,125 +43,131 @@
     <main id="container_main">
 
         <!-- carrusel -->
-        <section class="carrusel">
+        <div class="carrusel">
             <picture>
-                <img src="./assets/img/banner.webp" alt="Banner" srcset="" class="imgbanner">
+                <img src="./assets/img/banner.webp" alt="Banner" class="imgbanner">
             </picture>
-        </section>
+        </div>
         <!-- FIN carrusel -->
 
-        <!-- section de articulos Title -->
-        <div class="title-container">
-            <h2 class="title_sesion" id="articles">Articles</h2>
-        </div>
-        <!-- FIN section de articulos Title -->
+
 
         <!-- section de articulos -->
-        <section id="card_container">
+        <section>
+            <!-- section de articulos Title -->
+            <div class="title-container">
+                <h2 class="title_sesion" id="articles">Articles</h2>
+            </div>
+            <!-- FIN section de articulos Title -->
 
-            <article class="cards">
-                <picture class="card-img">
-                    <img src="./assets/img/post1.webp" alt="post1" srcset="" class="imgpos">
-                </picture>
-                <div class="card-body">
-                    <h2>Title</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda consectetur totam repudiandae, perferendis ullam
-                        laboriosam? Quos quis nihil laboriosam necessitatibus tempore
-                        adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <a href="#">Read More</a>
-                </div>
-            </article>
+            <div id="card_container">
+                <article class="cards">
+                    <picture class="card-img">
+                        <img src="./assets/img/post1.webp" alt="post1" class="imgpos">
+                    </picture>
+                    <div class="card-body">
+                        <h2>Title</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Assumenda consectetur totam repudiandae, perferendis ullam
+                            laboriosam? Quos quis nihil laboriosam necessitatibus tempore
+                            adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
 
-            <article class="cards">
-                <picture class="card-img">
-                    <img src="./assets/img/post3.webp" alt="post1" srcset="" class="imgpos">
-                </picture>
-                <div class="card-body">
-                    <h2>Title</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda consectetur totam repudiandae, perferendis ullam
-                        laboriosam? Quos quis nihil laboriosam necessitatibus tempore
-                        adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <a href="#">Read More</a>
-                </div>
-            </article>
+                <article class="cards">
+                    <picture class="card-img">
+                        <img src="./assets/img/post3.webp" alt="post1" class="imgpos">
+                    </picture>
+                    <div class="card-body">
+                        <h2>Title</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Assumenda consectetur totam repudiandae, perferendis ullam
+                            laboriosam? Quos quis nihil laboriosam necessitatibus tempore
+                            adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
 
-            <article class="cards">
-                <picture class="card-img">
-                    <img src="./assets/img/post4.webp" alt="post1" srcset="" class="imgpos">
-                </picture>
-                <div class="card-body">
-                    <h2>Title</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda consectetur totam repudiandae, perferendis ullam
-                        laboriosam? Quos quis nihil laboriosam necessitatibus tempore
-                        adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <a href="#">Read More</a>
-                </div>
-            </article>
+                <article class="cards">
+                    <picture class="card-img">
+                        <img src="./assets/img/post4.webp" alt="post1" class="imgpos">
+                    </picture>
+                    <div class="card-body">
+                        <h2>Title</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Assumenda consectetur totam repudiandae, perferendis ullam
+                            laboriosam? Quos quis nihil laboriosam necessitatibus tempore
+                            adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
 
-            <article class="cards">
-                <picture class="card-img">
-                    <img src="./assets/img/post2.webp" alt="post1" srcset="" class="imgpos">
-                </picture>
-                <div class="card-body">
-                    <h2>Title</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda consectetur totam repudiandae, perferendis ullam
-                        laboriosam? Quos quis nihil laboriosam necessitatibus tempore
-                        adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <a href="#">Read More</a>
-                </div>
-            </article>
+                <article class="cards">
+                    <picture class="card-img">
+                        <img src="./assets/img/post2.webp" alt="post1" class="imgpos">
+                    </picture>
+                    <div class="card-body">
+                        <h2>Title</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Assumenda consectetur totam repudiandae, perferendis ullam
+                            laboriosam? Quos quis nihil laboriosam necessitatibus tempore
+                            adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+            </div>
         </section>
         <!-- FIN section de articulos -->
 
 
-        <!-- section de articulos Title -->
-        <div class="title-container">
-            <h2 class="title_sesion" id="contact">Contact us</h2>
-        </div>
-        <!-- FIN section de articulos Title -->
 
         <!-- section de formulario -->
-        <section id="Container_formulario">
-            <article class="artitle-correo">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis
-                    neque ex aliquam omnis eius dignissimos harum ratione, nobis sunt eligendi
-                    consequuntur porro aut molestias similique, quos quasi fuga! Perferendis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis
-                    neque ex aliquam omnis eius dignissimos harum ratione, nobis sunt eligendi
-                    consequuntur porro aut molestias similique, quos quasi fuga! Perferendis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis
-                    neque ex aliquam omnis eius dignissimos harum ratione, nobis sunt eligendi
-                    consequuntur porro aut molestias similique, quos quasi fuga! Perferendis.
-                </p>
-            </article>
-            <form action="" class="container_inputs">
-                <label for="nombre" class="label">Name</label>
-                <input id="nombre" type="text" class="input">
-                <label for="email" class="label">Email</label>
-                <input type="email" name="" id="email" class="input">
-                <label for="telefono" class="label">Photo</label>
-                <input type="number" name="" id="telefono" class="input">
-                <label for="mensaje" class="label">Message</label>
-                <textarea name="" id="mensaje" cols="30" rows="10" class="input"></textarea>
-                <button type="submit" class="send">Send</button>
-            </form>
+        <section>
+            <!-- section de articulos Title -->
+            <div class="title-container">
+                <h2 class="title_sesion" id="contact">Contact us</h2>
+            </div>
+            <!-- FIN section de articulos Title -->
+            <div id="Container_formulario">
+                <article class="artitle-correo">
+                    <h2>Message</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis
+                        neque ex aliquam omnis eius dignissimos harum ratione, nobis sunt eligendi
+                        consequuntur porro aut molestias similique, quos quasi fuga! Perferendis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis
+                        neque ex aliquam omnis eius dignissimos harum ratione, nobis sunt eligendi
+                        consequuntur porro aut molestias similique, quos quasi fuga! Perferendis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis
+                        neque ex aliquam omnis eius dignissimos harum ratione, nobis sunt eligendi
+                        consequuntur porro aut molestias similique, quos quasi fuga! Perferendis.
+                    </p>
+                </article>
+                <form class="container_inputs">
+                    <label for="nombre" class="label">Name</label>
+                    <input id="nombre" type="text" class="input">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" id="email" class="input">
+                    <label for="telefono" class="label">Photo</label>
+                    <input type="number" id="telefono" class="input">
+                    <label for="mensaje" class="label">Message</label>
+                    <textarea id="mensaje" cols="30" rows="10" class="input"></textarea>
+                    <button type="submit" class="send">Send</button>
+                </form>
+            </div>
         </section>
         <!-- FIN section de formulario -->
 
@@ -169,7 +175,7 @@
 
     <!-- pie de pagina   -->
     <footer id="footer">
-        <p>All rights reserved 2023 </p>
+        <p>All rights reserved &copy;2023 </p>
     </footer>
     <script src="./js/scripts.js"></script>
 </body>

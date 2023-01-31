@@ -400,15 +400,14 @@ titulo articulo y formulario contacto*/
         width: 40px;
         height: 40px;
         background: url('./assets/img/bars-solid.svg') no-repeat;
-        background-size: contain;
-        /* background-position: center; */
-        filter: drop-shadow(1px 2px 1px (0, 0, 0, .1));
+        background-size:cover;
+        /* filter: drop-shadow(1px 2px 1px (0, 0, 0, .1)); */
     }
-
+  
     #toggle-menu.active .hamburger-icon {
         background: url('./assets/img/xmark-solid.svg') no-repeat;
-        background-size: contain;
-        /* background-position: center; */
+        background-size: cover;
+        background-position: center;
     }
 
     /* fin  Toggle menu x */
