@@ -157,7 +157,7 @@ titulo articulo y formulario contacto*/
     margin: 10px;
     background-color: #c0f0fa;
     border-radius: 10px;
-    transform: 0.2s;
+    transition: 0.2s;
 }
 
 .cards:hover {
@@ -204,7 +204,7 @@ titulo articulo y formulario contacto*/
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #383838;
-    transform: 0.2s;
+    transition: 0.2s;
 }
 
 .card-footer a:hover {
