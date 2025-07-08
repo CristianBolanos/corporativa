@@ -1,3 +1,16 @@
+// --- EFECTO DE SCROLL EN EL HEADER ---
+const header = document.getElementById('header');
+function handleHeaderScroll() {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+}
+window.addEventListener('scroll', throttle(handleHeaderScroll, 50));
+document.addEventListener('DOMContentLoaded', handleHeaderScroll); // Asegura el estado inicial al cargar
+
+
 // Utilidades
 function throttle(fn, wait) {
     let lastTime = 0;
@@ -35,6 +48,11 @@ function setDarkModeIcon() {
     if (darkModeBtnMobile) darkModeBtnMobile.innerHTML = isDark ? moon : sun;
 }
 setDarkModeIcon();
+
+
+
+
+
 
 // --- BOTÓN IR ARRIBA ---
 const scrollToTopBtn = document.getElementById('scrollToTop');

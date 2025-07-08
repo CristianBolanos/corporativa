@@ -90,12 +90,18 @@ body {
     letter-spacing: 0.5px;
 }
 
-#header ul li a:hover {
-    background: #c0f0fa;
+/* Estilo para el enlace activo y al pasar el mouse para máxima visibilidad */
+#header ul li a:hover,
+.main-menu a.active-section {
+    background: #6b6b6b;
     color: #0e293c;
     text-decoration: none;
 }
 
+/* El enlace activo además es más grueso para destacarlo */
+.main-menu a.active-section {
+    font-weight: 700;
+}
 /* FIN cabezera de pagina */
 
 /* =============================
@@ -1340,16 +1346,6 @@ textarea.input {
     outline: 2px solid #c0f0fa;
     outline-offset: 2px;
 }
-
-.main-menu a.active-section {
-    color: #c0f0fa !important;
-    text-decoration: underline solid 2px #c0f0fa;
-    font-weight: 700;
-    background: #0e293c22;
-    border-radius: 6px;
-    transition: color 0.2s, background 0.2s, text-decoration 0.2s;
-}
-
 .contact-section {
     position: relative;
     overflow: hidden;
